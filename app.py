@@ -18,7 +18,7 @@ posts = [
 
 @app.route("/", methods = ['GET'])
 def metrics():
-    return redirect(url_for('templates',filename = 'home.html'))
+    return redirect(url_for('templates',filename = 'index.html'))
 @app.route("/home")
 def home():
     return render_template('home.html', posts=posts)
